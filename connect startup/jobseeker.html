@@ -1,0 +1,157 @@
+<html>
+  <head>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <link rel="stylesheet" href="jobseeker.css"/>
+      <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- bootstrap4 -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"/>
+
+    <title>SURVEY FORM</title>
+   <head>
+  <body >
+    <div class="outer-box">
+    <h1 id="title">JOB SEEKERS PORTAL (FOR CS AND IT STUDENTS)</h1>
+
+
+
+
+        <p id="description"> our intention is to know about the interest and their thoughts in the tech field
+        </p>
+
+        <hr>
+      <form id="survey-form">
+
+        <div class="flex-container">
+          <div class="left-half">
+            <label for="name" id="name-label">YOUR NAME:</label>
+          </div>
+          <div class="right-half">
+          <input id="name" type="text" name="name-input" placeholder="enter your full name" required>
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <div class="left-half">
+            <label for="email" id="email-label">EMAIL ID:</label>
+          </div>
+          <div class="right-half">
+          <input id="email" type="email" name="email-input" placeholder="enter your email-id" required>
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <div class="left-half">
+            <label for="number" id="number-label">AGE:</label>
+          </div>
+          <div class="right-half">
+
+
+             <input id="number" type="number" name="number" placeholder="age in num" min="6" max="90"required>
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <div class="left-half">
+            <label for="weekend-label">Date of birth?</label>
+          </div>
+          <div class="right-half">
+
+          <input id="weekend-label"   type="date" name="weekend-input" required >
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <div class="left-half">
+            <label id="qn1-oss">Are you interested and involved in contributing towards the open source project?</label>
+          </div>
+          <div class="right-half">
+          <input id="qn-1-oss" type="radio" name="radio-oss" value="YES" checked> yes  <br>
+
+             <input id="qn-1-oss" type="radio" name="radio-oss" value="NO"> no
+          </div>
+        </div>
+
+         <div class="flex-container">
+          <div class="left-half">
+            <label for="qn2-hrs">How much will you dedicate towards your learning (in daily basis)?:</label>
+          </div>
+          <div class="right-half">
+          <input id="qn2-hrs" type="number" name="hours-input" placeholder="In hours" max="24" min="1" required>
+          </div>
+        </div>
+
+         <div class="flex-container">
+          <div class="left-half">
+            <label id="qn3-aoi">which of these framework/languages describes you most ?(select multiple if it suits for you!)</label>
+          </div>
+          <div class="right-half">
+
+        <div class="bs-col-row">
+          <input id="qn-3-aoi" type="checkbox" name="checkbox-aoi" value="HTML5" checked> HTML5 <br>
+
+             <input id="qn-3-aoi" type="checkbox" name="checkbox-aoi" value="CSS3"> CSS3 <br>
+
+            <input id="qn-3-aoi" type="checkbox" name="checkbox-aoi" value="JAVASCRIPT"> JAVASCRIPT<br>
+
+            <input id="qn-3-aoi" type="checkbox" name="checkbox-aoi" value="BOOTSTRAP4"> BOOTSTRAP4 <br>
+            </div>
+      <div class="bs-col-row">
+            <input id="qn-3-aoi" type="checkbox" name="checkbox-aoi" value="NOSQL"> NOSQL <br>
+
+            <input id="qn-3-aoi" type="checkbox" name="checkbox-aoi" value="PHP"> PHP <br>
+
+            <input id="qn-3-aoi" type="checkbox" name="checkbox-aoi" value="MONGODB"> MONGODB <br>
+
+            <input id="qn-3-aoi" type="checkbox" name="checkbox-aoi" value="RUBY"> RUBY <br>
+
+              <input id="qn-3-aoi" type="checkbox" name="checkbox-aoi" value="LARAVEL"> LARAVEL<br>
+          </div>
+           </div> <!--bs col 2 (split) row --class -->
+        </div>
+
+
+
+        <div class="flex-container">
+          <div class="left-half">
+            <label for="dropdown">Position of Responsibility</label>
+          </div>
+          <div class="right-half">
+          <select name="professions" id="dropdown">
+            <option value="Student">Student</option>
+            <option value="Full-time-learner">FULL TIME LEARNER </option>
+            <option value="Partial-learner">
+              Working and aspiring to learn </option>
+            <option value="Learning">looking for career with involvement in learning </option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <div class="left-half">
+            <label for="cmnt-label">Your valuable thoughts should reach us!</label>
+          </div>
+          <div class="right-half">
+
+            <textarea class="textarea"rows="4" cols="4" placeholder=" type your comments" required>
+
+            </textarea>
+          </div>
+        </div>
+       <div class="left">
+         <button class="btn btn-success " id="submit"><i class="fa fa-paper-plane"></i>  Submit</button>
+        </div>
+        </form>
+
+
+    </div>
+  </body>
+
+</html>

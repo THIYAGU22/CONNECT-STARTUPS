@@ -1,0 +1,104 @@
+.outer-box{
+  box-sizing:border-box;
+  border:1px solid #000000;
+  border-radius:50px;
+  box-shadow:5px 10px 15px 10px #888888;
+  width:85%;
+  margin:auto;
+  padding:20px;
+  max-width:70%;
+  
+}
+#title{
+  text-align:center;
+ 
+}
+#description{
+  text-align:center;
+  text-transform:uppercase;
+  font-size:1em;
+}
+.flex-container{
+  display:flex;
+  width:100%;
+  background: linear-gradient(to right, #b92b27, #1565c0); 
+}
+.left-half{
+  padding:5px 5px;
+  width:100%;
+  background-color:#ffeead;
+  margin:5px 5px ;
+  text-align:center;
+}
+.right-half{
+  padding:5px 5px;
+  width:100%;
+  margin:5px 5px ;
+  background-color:#96ceb4;
+ }
+.bs-col-row{
+  display:flex;
+  flex-basis:auto;
+  padding:5px;
+  margin:5px;
+  flex-direction:row;
+  flex-wrap:wrap;
+  width:100%;
+  justify-content: center;
+  }
+
+#name{
+  display:flex;
+  flex-grow:1;
+}
+#name,#email,#number,#weekend-label,#qn2-hrs,#dropdown-label{
+  width:100%;
+}
+
+input[type=text], input[type=number] ,input[type=date]{
+  box-sizing:border-box;
+  border:2px solid gray;
+  padding:2px 2px;
+}
+select{
+  width:100%;
+  padding:2px 2px;
+  border:2px solid gray;
+  border-radius:8px;
+}
+.textarea{
+  width:90%;
+  font-size:14px;
+  line-height:2;
+}
+
+.left{
+  display:flex;
+  justify-content:center;
+ }
+html,body{
+  box-sizing:border-box;
+  height:100%;
+  width:auto;
+  padding:10px;
+
+  font-size:1.486vw;
+}
+
+@media screen and (max-width:670px){
+  .flex-container{
+    flex-direction:column;
+    
+    width:100%;
+  
+   
+  }
+  .left-half{
+    align-self:flex-start;
+    width:97%;
+  }
+  .right-half{
+    width:97%;
+  }
+  
+}
